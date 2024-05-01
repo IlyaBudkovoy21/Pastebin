@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="" />
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/HomePage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2fSxz15KQFOODpiEFc5aMSgibJl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,11 +44,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.models.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Project1/Pastebin",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pastebin\Pastebin\Pastebin\static" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

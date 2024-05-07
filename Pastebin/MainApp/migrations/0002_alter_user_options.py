@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('HomePage', '0001_initial'),
+        ('MainApp', '0001_initial'),
     ]
 
     operations = [

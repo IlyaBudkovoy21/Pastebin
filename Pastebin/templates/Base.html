@@ -25,15 +25,11 @@
     </div>
 
     <div class="container-fluid bg-secondary text-white text-center border-top border-1">
-        <div class="row">
-            <div class="col-12">
-                {% block content %}
-                {% endblock content %}
-            </div>
-        </div>
+        {% block content %}
+        {% endblock content %}
     </div>
 
-    <div class="container-fluid bg-secondary text-white text-center border-top border-1">
+    <div class="container-fluid bg-secondary text-white text-center border-top border-1 fixed-bottom">
         <div class="row">
             <div class="col-5 text-end">
                 <a href="https://github.com/IlyaBudkovoy21"><img src="{% static 'images/img_2.png' %}" width=35 height=35></a>

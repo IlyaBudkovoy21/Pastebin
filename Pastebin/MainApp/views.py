@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 # Create your views here.
@@ -13,5 +12,5 @@ def home(request):
     return render(request, 'MainApp/MainPage.html', context=context)
 
 
-def input(request):
-    return HttpResponse('<h1>Страница ввода</h1>')
+def login(request):
+    return render(request, 'registration/login.html')

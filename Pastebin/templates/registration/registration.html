@@ -3,5 +3,9 @@
 <p>Страница регистрации</p>
 {% endblock %}
 {% block content %}
-
+<form action="registration_success/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Готово</button>
+</form>
 {% endblock content %}

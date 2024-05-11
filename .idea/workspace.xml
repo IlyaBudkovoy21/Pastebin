@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил модели и реализовал admin-сайт">
-      <change beforePath="$PROJECT_DIR$/.idea/Pastebin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pastebin.iml" afterDir="false" />
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил страницу регистрации">
+      <change afterPath="$PROJECT_DIR$/Pastebin/MainApp/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/templates/PersonalAccount/PersonalAccount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/templates/registration/RegistrationSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/login.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "IlyaBudkovoy21"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d2f8456a-a793-4c76-9332-4374948bf810" />
+        <option name="url" value="https://github.com/IlyaBudkovoy21/Pastebin.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Pastebin/MainApp/views.py" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +73,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Pastebin/templates/PersonalAccount" />
       <recent name="D:\Pastebin\Pastebin\Pastebin\static" />
     </key>
   </component>
@@ -90,11 +109,31 @@
       <option name="project" value="LOCAL" />
       <updated>1714556042427</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавил страницу регистрации">
+      <option name="closed" value="true" />
+      <created>1715186555854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715186555855</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил модели и реализовал admin-сайт" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил модели и реализовал admin-сайт" />
+    <MESSAGE value="Добавил страницу регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницу регистрации" />
   </component>
 </project>

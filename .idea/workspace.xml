@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил страницу регистрации">
-      <change afterPath="$PROJECT_DIR$/Pastebin/MainApp/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pastebin/templates/PersonalAccount/PersonalAccount.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pastebin/templates/registration/RegistrationSuccess.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" afterDir="false" />
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавлена регистрация на сайте с использованием форм">
+      <change afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0005_remove_user_id_link_alter_user_options_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +28,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "IlyaBudkovoy21"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IlyaBudkovoy21&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -117,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715186555855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлена регистрация на сайте с использованием форм">
+      <option name="closed" value="true" />
+      <created>1715433720402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715433720402</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил модели и реализовал admin-сайт" />
     <MESSAGE value="Добавил страницу регистрации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницу регистрации" />
+    <MESSAGE value="Добавлена регистрация на сайте с использованием форм" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена регистрация на сайте с использованием форм" />
   </component>
 </project>

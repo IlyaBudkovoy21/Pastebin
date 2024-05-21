@@ -1,0 +1,27 @@
+{% extends 'Base.html' %}
+{% block header %}
+<p>Личный кабинет</p>
+{% endblock header %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row text-center">
+        <h3>You are not logged in</h3>
+    </div>
+    <div class="row">
+        <h4>To access your personal account and application services, you need to log in or register</h4>
+    </div>
+    <div class="row">
+        <div class="col-4 text-center">
+            <a class="btn btn-outline-light" href="{% url 'registration'%}">Register</a>
+        </div>
+        <div class="col-4 text-center">
+            <a class="btn btn-outline-light" href="{% url 'login'%}">Login</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

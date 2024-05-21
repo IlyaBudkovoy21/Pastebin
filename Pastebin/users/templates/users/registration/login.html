@@ -1,0 +1,22 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+<form method="post" action="">
+    {% csrf_token %}
+    <div class="form-group row">
+        <div class="col-4"></div>
+        <label for="NameUser" class="col-sm-2 text-end col-form-label">Username</label>
+        <div class="col-sm-3">
+            <input type="text" id="NameUser" class="form-control" name="name" placeholder="Name">
+        </div>
+    </div>
+    <br>
+    <div class="form-group row">
+        <div class="col-4"></div>
+        <label for="SurnameUser" class="col-sm-2 text-end col-form-label">Password</label>
+        <div class="col-sm-3">
+            <input type="text" id="SurnameUser" class="form-control" name="surname" placeholder="Surname">
+        </div>
+    </div>
+</form>
+{% endblock content %}

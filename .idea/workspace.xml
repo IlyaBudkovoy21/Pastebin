@@ -4,13 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавлена регистрация на сайте с использованием форм">
-      <change afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0005_remove_user_id_link_alter_user_options_and_more.py" afterDir="false" />
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Сделал более красивую регистрацию">
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_form_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024__21_16__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/PersonalAccount/PersonalAccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/RegistrationSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +51,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -54,19 +84,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project1/Pastebin&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "login__feature",
+    "last_opened_file_path": "/Users/ilya_budkovoy/Projects/Pastebin",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Pastebin/users/templates/users" />
       <recent name="$PROJECT_DIR$/Pastebin/templates/PersonalAccount" />
       <recent name="D:\Pastebin\Pastebin\Pastebin\static" />
     </key>
@@ -119,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715433720402</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Сделал более красивую регистрацию">
+      <option name="closed" value="true" />
+      <created>1715707069378</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715707069378</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +176,7 @@
     <MESSAGE value="Добавил модели и реализовал admin-сайт" />
     <MESSAGE value="Добавил страницу регистрации" />
     <MESSAGE value="Добавлена регистрация на сайте с использованием форм" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена регистрация на сайте с использованием форм" />
+    <MESSAGE value="Сделал более красивую регистрацию" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал более красивую регистрацию" />
   </component>
 </project>

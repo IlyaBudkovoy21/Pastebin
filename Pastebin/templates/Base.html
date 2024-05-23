@@ -8,35 +8,34 @@
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <script defer src="/static/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div class="container-fluid p-3 bg-secondary text-white text-center">
+<body style="background-color:#FFFFFF">
+    <div class="container-fluid p-3 bg-secondary text-white text-center w-100px ">
         <div class="row">
             <div class="col-4 text-end">
                 <img src="{% static 'images/img.png'%}" width="100" height="100">
             </div>
-            <div class="col-8 text-start">
-                <h1>Pastebin</h1>
-                <h6>
-                    {% block header %}
-                    {% endblock %}
-                </h6>
-            </div>
+        <div class="col-6 text-start">
+        <h1>Pastebin</h1>
+        <h6>
+            {% block header %}
+            {% endblock %}
+        </h6>
+        </div>
+        <div class="col-2 text-center">
+            <h6>
+                <br><br>
+                    <a href="{% url 'default' %}" class="btn btn-outline-light">Личный кабинет</a>
+            </h6>
         </div>
     </div>
+    </div>
+
 
     <div class="container-fluid bg-secondary text-white text-center border-top border-1">
         {% block content %}
         {% endblock content %}
     </div>
 
-    <div class="offcanvas offcanvas-start">
-        <div class="offcanvas-header">
-            <h2 class="offcanvas-title">Боковое меню</h2>
-        </div>
-        <div class="offcanvas-body">
-            <p>Здесь содержится информация о боковом меню</p>
-        </div>
-    </div>
 
     <div class="container-fluid bg-secondary text-white text-center border-top border-1 fixed-bottom">
         <div class="row">

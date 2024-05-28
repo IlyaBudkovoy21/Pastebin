@@ -1,30 +1,31 @@
-from django.shortcuts import render
-from .forms import UserLoginForm
+from django.shortcuts import render, redirect, HttpResponse, reverse
+from .forms import UserLoginForm, UserRegistrationForm
 from django.contrib import auth
+from django.contrib.auth.views import LoginView
 
 
 # Create your views here.
-def login(request):
-    if request.method == 'POST':
-        form = UserLoginForm(request)
-        if form.is_valid():
-            username = request.POST['username']
-            password = request.POST['password']
-            user = auth.authenticate(username=username, password=password)
-            if user:
-                auth.login(request, user)
-                return render(request, 'users/PersonalAccount/PersonalAccount.html', {'user': form})
-    form = UserLoginForm()
-    return render(request, 'users/registration/login.html', {'form': form})
-
-
-def registration(request):
-
-    return render(request, 'users/registration/registration.html')
-
+class UserLogin(LoginView):
+    template_name = 'users/registration/login.html'
+    form_class = UserLoginForm
+    success_url = 'users/PersonalAccount/PersonalAccountIn.html'
 
 def registration_success(request):
     return render(request, 'users/registration/registration_success.html')
+
+
+def registration(request):
+    if request.method == "POST":
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.set_password(form.cleaned_data.get('password'))
+            user.save()
+            return redirect(reverse('users:registration_success'))
+        else:
+            return render(request, 'users/registration/registration.html', {'form': form})
+    form = UserRegistrationForm()
+    return render(request, 'users/registration/registration.html', {'form': form})
 
 
 def personal_account(request):

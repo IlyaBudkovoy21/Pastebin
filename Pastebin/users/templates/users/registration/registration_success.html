@@ -6,3 +6,12 @@
 {% block content %}
 <p>Вы были успешно зарегистрированы. Теперь Вам доступен личный кабинет</p>
 {% endblock content %}
+{% block menu %}
+<div class="col-10 text-center">
+    <a href="{% url 'main_page:Home' %}" class="btn btn-outline-dark">Sending</a>
+</div>
+<br>
+<div class="col-10 text-center">
+    <a href="{% url 'users:default' %}" class="btn btn-outline-dark">Personal account</a>
+</div>
+{% endblock menu %}

@@ -5,32 +5,23 @@
 {% block content %}
 
 <br>
-<form action="" method="post" class="container-fluid">
-{% csrf_token %}
+<form action="{% url 'users:registration' %}" method="post">
+    {% csrf_token %}
+    {% for i in form %}
     <div class="form-group row">
-        <div class="col-4"></div>
-        <label for="NameUser" class="col-sm-2 text-end col-form-label">Name</label>
-        <div class="col-sm-3">
-            <input type="text" id="NameUser" class="form-control" name="name" placeholder="Name">
+        <div class="col-2"></div>
+        <label class="col-3 text-end col-form-label">{{ i.label }}</label>
+        <div class="col-2">
+            {{ i }}
+        </div>
+        <div class="col-5 text-start text-warning">
+            {% if i.errors %}
+                <span class="error-message">{{ i.errors.as_text}}</span>
+            {% endif %}
         </div>
     </div>
     <br>
-    <div class="form-group row">
-        <div class="col-4"></div>
-        <label for="SurnameUser" class="col-sm-2 text-end col-form-label">Surname</label>
-        <div class="col-sm-3">
-            <input type="text" id="SurnameUser" class="form-control" name="surname" placeholder="Surname">
-        </div>
-    </div>
-    <br>
-    <div class="form-group row">
-        <div class="col-4"></div>
-        <label for="EmailUser" class="col-sm-2 text-end col-form-label">Email</label>
-        <div class="col-sm-3">
-            <input type="text" id="EmailUser" class="form-control" name="email" placeholder="Email">
-        </div>
-    </div>
-    <br>
+    {% endfor %}
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endblock content %}

@@ -2,6 +2,11 @@
 {% block header %}
 Напишите свой текст и отправьте его кому угодно всего в пару кликов!
 {% endblock %}
+{% block menu %}
+<div class="col-10 text-center">
+    <a href="{% url 'users:default' %}" class="btn btn-outline-dark">Personal account</a>
+</div>
+{% endblock menu %}
 {% block content %}
 
 

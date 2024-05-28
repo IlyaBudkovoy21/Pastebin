@@ -1,22 +1,30 @@
 {% extends 'Base.html' %}
 
+{% block header %}
+Enter to the personal account
+{% endblock header %}
+
 {% block content %}
-<form method="post" action="">
+<form method="post" action="{% url 'users:login' %}">
     {% csrf_token %}
+    {% for i in form %}
     <div class="form-group row">
-        <div class="col-4"></div>
-        <label for="NameUser" class="col-sm-2 text-end col-form-label">Username</label>
-        <div class="col-sm-3">
-            <input type="text" id="NameUser" class="form-control" name="name" placeholder="Name">
+        <div class="col-2"></div>
+        <label class="col-3 text-end col-form-label">{{ i.label }}</label>
+        <div class="col-2">
+            {{ i }}
         </div>
     </div>
     <br>
-    <div class="form-group row">
-        <div class="col-4"></div>
-        <label for="SurnameUser" class="col-sm-2 text-end col-form-label">Password</label>
-        <div class="col-sm-3">
-            <input type="text" id="SurnameUser" class="form-control" name="surname" placeholder="Surname">
-        </div>
-    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+{% if messages %}
+                                {% for message in messages %}
+                                    {{ message }}
+                                {% endfor %}
+                            {% else %}
+                                {{ form.non_field_errors }}
+                            {% endif %}
 </form>
 {% endblock content %}

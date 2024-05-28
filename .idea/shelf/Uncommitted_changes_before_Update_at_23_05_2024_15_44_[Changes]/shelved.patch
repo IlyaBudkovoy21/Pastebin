@@ -1,0 +1,132 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024__21_16__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024__21_16__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024__21_16__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024__21_16__Changes_.xml	(revision badb52001556aa764064c84ef465c886ee3bdff2)
++++ /dev/null	(revision badb52001556aa764064c84ef465c886ee3bdff2)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]" date="1715105830522" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 07.05.2024, 21:16 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch	(revision badb52001556aa764064c84ef465c886ee3bdff2)
++++ /dev/null	(revision badb52001556aa764064c84ef465c886ee3bdff2)
+@@ -1,88 +0,0 @@
+-Index: .idea/Pastebin.iml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/Pastebin.iml b/.idea/Pastebin.iml
+---- a/.idea/Pastebin.iml	(revision 5c191a2516b8e573b49e2ec75d66ea44d1b70f56)
+-+++ b/.idea/Pastebin.iml	(date 1715105615950)
+-@@ -3,6 +3,7 @@
+-   <component name="NewModuleRootManager">
+-     <content url="file://$MODULE_DIR$">
+-       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+-+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+-     </content>
+-     <orderEntry type="inheritedJdk" />
+-     <orderEntry type="sourceFolder" forTests="false" />
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4e4d95b4-f4a3-47b3-9700-b7f57d81728e\" name=\"Changes\" comment=\"Добавил модели и реализовал admin-сайт\">\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/static/images/img.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/static/images/img_1.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/static/images/img_2.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/templates/Base.html\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/templates/registration/login.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/__init__.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/__init__.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/admin.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/admin.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/apps.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/apps.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/migrations/0001_initial.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/migrations/0001_initial.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/migrations/0002_alter_user_options.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/migrations/0002_alter_user_options.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/migrations/0003_user_active_link_user_email_user_link.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/migrations/0003_user_active_link_user_email_user_link.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/migrations/0004_link_remove_user_active_link_remove_user_link_and_more.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/migrations/0004_link_remove_user_active_link_remove_user_link_and_more.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/migrations/__init__.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/migrations/__init__.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/models.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/models.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/tests.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/tests.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/urls.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/HomePage/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/views.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/Pastebin/settings.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/Pastebin/settings.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/Pastebin/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/Pastebin/urls.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/db.sqlite3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/db.sqlite3\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n        <option value=\"HTML File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/Pastebin/MainApp/views.py\" root0=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"2fSxz15KQFOODpiEFc5aMSgibJl\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\n    &quot;Python.models.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;last_opened_file_path&quot;: &quot;D:/Project1/Pastebin&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"D:\\Pastebin\\Pastebin\\Pastebin\\static\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4e4d95b4-f4a3-47b3-9700-b7f57d81728e\" name=\"Changes\" comment=\"\" />\n      <created>1713808538151</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1713808538151</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Добавил модели и реализовал admin-сайт\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1714556012576</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1714556012576</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Добавил модели и реализовал admin-сайт\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1714556042427</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1714556042427</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Добавил модели и реализовал admin-сайт\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Добавил модели и реализовал admin-сайт\" />\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 5c191a2516b8e573b49e2ec75d66ea44d1b70f56)
+-+++ b/.idea/workspace.xml	(date 1715105615971)
+-@@ -4,30 +4,7 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил модели и реализовал admin-сайт">
+--      <change afterPath="$PROJECT_DIR$/Pastebin/static/images/img.png" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/Pastebin/static/images/img_1.png" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/Pastebin/static/images/img_2.png" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/Pastebin/templates/registration/login.html" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/__init__.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/admin.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/apps.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0001_initial.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/migrations/0002_alter_user_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0002_alter_user_options.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/migrations/0003_user_active_link_user_email_user_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0003_user_active_link_user_email_user_link.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/migrations/0004_link_remove_user_active_link_remove_user_link_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0004_link_remove_user_active_link_remove_user_link_and_more.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/__init__.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/models.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/tests.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/HomePage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/views.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
+--    </list>
+-+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил модели и реализовал admin-сайт" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -56,17 +33,17 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent">{
+--  &quot;keyToString&quot;: {
+--    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+--    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+--    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+--    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+--    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+--    &quot;last_opened_file_path&quot;: &quot;D:/Project1/Pastebin&quot;,
+--    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+-+  <component name="PropertiesComponent"><![CDATA[{
+-+  "keyToString": {
+-+    "DefaultHtmlFileTemplate": "HTML File",
+-+    "Python.models.executor": "Run",
+-+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-+    "RunOnceActivity.ShowReadmeOnStart": "true",
+-+    "git-widget-placeholder": "master",
+-+    "last_opened_file_path": "D:/Project1/Pastebin",
+-+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+-   }
+--}</component>
+-+}]]></component>
+-   <component name="RecentsManager">
+-     <key name="MoveFile.RECENT_KEYS">
+-       <recent name="D:\Pastebin\Pastebin\Pastebin\static" />
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4e4d95b4-f4a3-47b3-9700-b7f57d81728e\" name=\"Changes\" comment=\"Добавлена регистрация на сайте с использованием форм\">\r\n      <change afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/migrations/0005_remove_user_id_link_alter_user_options_and_more.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/MainApp/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/MainApp/views.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/db.sqlite3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/db.sqlite3\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/templates/Base.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/templates/Base.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pastebin/templates/registration/registration.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pastebin/templates/registration/registration.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;IlyaBudkovoy21&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"d2f8456a-a793-4c76-9332-4374948bf810\" />\r\n        <option name=\"url\" value=\"https://github.com/IlyaBudkovoy21/Pastebin.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/Pastebin/MainApp/views.py\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fSxz15KQFOODpiEFc5aMSgibJl\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;Python.models.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/Project1/Pastebin&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/Pastebin/templates/PersonalAccount\" />\r\n      <recent name=\"D:\\Pastebin\\Pastebin\\Pastebin\\static\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4e4d95b4-f4a3-47b3-9700-b7f57d81728e\" name=\"Changes\" comment=\"\" />\r\n      <created>1713808538151</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1713808538151</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Добавил модели и реализовал admin-сайт\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1714556012576</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1714556012576</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавил модели и реализовал admin-сайт\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1714556042427</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1714556042427</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Добавил страницу регистрации\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715186555854</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715186555855</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавлена регистрация на сайте с использованием форм\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715433720402</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715433720402</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Добавил модели и реализовал admin-сайт\" />\r\n    <MESSAGE value=\"Добавил страницу регистрации\" />\r\n    <MESSAGE value=\"Добавлена регистрация на сайте с использованием форм\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Добавлена регистрация на сайте с использованием форм\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision badb52001556aa764064c84ef465c886ee3bdff2)
++++ b/.idea/workspace.xml	(date 1716468236471)
+@@ -5,12 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавлена регистрация на сайте с использованием форм">
+-      <change afterPath="$PROJECT_DIR$/Pastebin/MainApp/migrations/0005_remove_user_id_link_alter_user_options_and_more.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024,_21_16_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2024__21_16__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/views.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/registration/registration.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />

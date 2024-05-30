@@ -134,4 +134,4 @@ AUTH_USER_MODEL = 'users.User'
 
 
 SESSION_ENGINE = "django.contrib.sessions.backends.file"
-SESSION_FILE_PATH = "D:\Pastebin\sessions"
+SESSION_FILE_PATH = "/Users/ilya_budkovoy/Projects/Pastebin"

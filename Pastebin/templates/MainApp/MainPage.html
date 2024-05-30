@@ -2,12 +2,13 @@
 {% block header %}
 Напишите свой текст и отправьте его кому угодно всего в пару кликов!
 {% endblock %}
-{% block menu %}
-<div class="col-10 text-center">
-    <a href="{% url 'users:default' %}" class="btn btn-outline-dark">Personal account</a>
-</div>
-{% endblock menu %}
 {% block content %}
-
-
 {% endblock %}
+
+{% block button_header %}
+    {% if user.is_authenticated %}
+        <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Account</a>
+    {% else %}
+        <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Log in</a>
+    {% endif %}
+{% endblock button_header %}

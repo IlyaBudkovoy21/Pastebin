@@ -1,6 +1,6 @@
 {% extends 'Base.html' %}
 {% block header %}
-<p>Личный кабинет</p>
+<p>Account</p>
 {% endblock header %}
 
 {% block content %}
@@ -10,11 +10,6 @@
 
 {% endblock content %}
 
-{% block menu %}
-
-<div class="col-10 text-center">
-    <a href="{% url 'main_page:Home' %}" class="btn btn-outline-dark">Sending</a>
-</div>
-
-
-{% endblock %}
+{% block button_header %}
+<a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
+{% endblock button_header %}

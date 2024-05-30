@@ -9,7 +9,8 @@ def home(request):
     text_welcome = 'Добро пожаловать на сайт Pastebin!'
     context = {
         'text_description': text_description,
-        'text_welcome': text_welcome
+        'text_welcome': text_welcome,
+        'user': request.user,
     }
     return render(request, 'MainApp/MainPage.html', context=context)
 

@@ -12,8 +12,6 @@
     <div class="container-fluid p-3 bg-secondary text-white text-center w-100px ">
         <div class="row">
             <div class="col-2">
-                <br>
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
             </div>
             <div class="col-2 text-end">
                 <img src="{% static 'images/img.png'%}" width="100" height="100">
@@ -27,7 +25,8 @@
             </div>
             <div class="col-2 text">
                 <br>
-                <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Log in</a>
+                {% block button_header %}
+                {% endblock button_header %}
             </div>
 
     </div>

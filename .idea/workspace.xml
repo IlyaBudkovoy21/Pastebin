@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавлена регистрация на сайте с использованием форм">
-      <change afterPath="$PROJECT_DIR$/Pastebin/users/migrations/0002_user_is_verified_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_05_2024__15_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_05_2024__15_36__Changes_.xml" afterDir="false" />
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Создал регистрацию пользователей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccount.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration_success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
@@ -143,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715433720402</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Создал регистрацию пользователей">
+      <option name="closed" value="true" />
+      <created>1716901919191</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716901919191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +159,7 @@
     <MESSAGE value="Добавил модели и реализовал admin-сайт" />
     <MESSAGE value="Добавил страницу регистрации" />
     <MESSAGE value="Добавлена регистрация на сайте с использованием форм" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена регистрация на сайте с использованием форм" />
+    <MESSAGE value="Создал регистрацию пользователей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал регистрацию пользователей" />
   </component>
 </project>

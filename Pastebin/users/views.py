@@ -1,14 +1,21 @@
-from django.shortcuts import render, redirect, HttpResponse, reverse
+from django.shortcuts import render, redirect, reverse
 from .forms import UserLoginForm, UserRegistrationForm
-from django.contrib import auth
-from django.contrib.auth.views import LoginView
+from django.contrib.auth import authenticate, login
+from django.contrib import messages
 
 
-# Create your views here.
-class UserLogin(LoginView):
-    template_name = 'users/registration/login.html'
-    form_class = UserLoginForm
-    success_url = 'users/PersonalAccount/PersonalAccountIn.html'
+def login_user(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        print(user)
+        if user is not None:
+            login(request, user)
+            return redirect(reverse('users:personal_account'))
+    form = UserLoginForm()
+    return render(request, "users/registration/login.html", {'form': form})
+
 
 def registration_success(request):
     return render(request, 'users/registration/registration_success.html')
@@ -18,9 +25,12 @@ def registration(request):
     if request.method == "POST":
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
-            user = form.save(commit=False)
-            user.set_password(form.cleaned_data.get('password'))
-            user.save()
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            messages.success(request, 'Registration successful')
             return redirect(reverse('users:registration_success'))
         else:
             return render(request, 'users/registration/registration.html', {'form': form})
@@ -29,13 +39,9 @@ def registration(request):
 
 
 def personal_account(request):
-    try:
-        if request.user.is_authenticated() is not None:
-            username = request.user.get_username()
-            return render('users/PersonalAccount/PersonalAccountIn.html',
-                          context={'username': username})
-    except:
-        return render(request, 'users/PersonalAccount/PersonalAccount.html')
+    if request.user.is_authenticated:
+        return render(request, 'users/PersonalAccount/PersonalAccountIn.html')
+    return render(request, 'users/PersonalAccount/PersonalAccount.html')
 
 
 def logout(request):

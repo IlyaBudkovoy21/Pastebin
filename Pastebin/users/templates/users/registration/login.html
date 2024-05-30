@@ -17,14 +17,6 @@ Enter to the personal account
     </div>
     <br>
     {% endfor %}
-
     <button type="submit" class="btn btn-primary">Submit</button>
-{% if messages %}
-                                {% for message in messages %}
-                                    {{ message }}
-                                {% endfor %}
-                            {% else %}
-                                {{ form.non_field_errors }}
-                            {% endif %}
 </form>
 {% endblock content %}

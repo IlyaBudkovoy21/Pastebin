@@ -41,7 +41,7 @@ def registration(request):
 def personal_account(request):
     if request.user.is_authenticated:
         return render(request, 'users/PersonalAccount/PersonalAccountIn.html')
-    return render(request, 'users/PersonalAccount/PersonalAccount.html')
+    return render(request, 'users/PersonalAccount/PersonalAccount.html', {'user': request.user})
 
 
 def logout(request):

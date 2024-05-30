@@ -5,7 +5,16 @@
 
 {% block content %}
 
-<h3>Welcome, {{ username}}!</h3>
+<h3>Welcome, {{ user.username }}!</h3>
 <h4>You have successfully logged into your account</h4>
 
 {% endblock content %}
+
+{% block menu %}
+
+<div class="col-10 text-center">
+    <a href="{% url 'main_page:Home' %}" class="btn btn-outline-dark">Sending</a>
+</div>
+
+
+{% endblock %}

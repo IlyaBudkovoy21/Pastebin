@@ -18,13 +18,17 @@
             <div class="col-2 text-end">
                 <img src="{% static 'images/img.png'%}" width="100" height="100">
             </div>
-        <div class="col-6 text-start">
-        <h1>Pastebin</h1>
-        <h6>
+            <div class="col-6 text-start">
+            <h1>Pastebin</h1>
+            <h6>
             {% block header %}
             {% endblock %}
-        </h6>
-        </div>
+            </h6>
+            </div>
+            <div class="col-2 text">
+                <br>
+                <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Log in</a>
+            </div>
 
     </div>
     </div>
@@ -47,15 +51,7 @@
 
 
 
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><strong>Menu</strong></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        {% block menu %}
-        {% endblock menu %}
 
-    </div>
 
 
 

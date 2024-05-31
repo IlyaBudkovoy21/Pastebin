@@ -1,7 +1,19 @@
 {% extends 'Base.html' %}
 
+{% block header %}
+Logging out
+{% endblock header %}
+
+
 {% block content %}
 
-
+<h3>
+You have successfully logged out of your account!
+</h3>
 
 {% endblock content %}
+
+{% block button_header %}
+<a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
+<a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Log in</a>
+{% endblock button_header %}

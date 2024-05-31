@@ -29,9 +29,8 @@
     </div>
     <br>
 </div>
-
-
-
-
-
 {% endblock content %}
+
+{% block button_header %}
+<a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
+{% endblock button_header %}

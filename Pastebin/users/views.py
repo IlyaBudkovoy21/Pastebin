@@ -47,3 +47,8 @@ def personal_account(request):
 def logout_user(request):
     logout(request)
     return render(request, 'users/registration/logout.html')
+
+
+def update_user(request):
+    if request.method == 'POST':
+        form =

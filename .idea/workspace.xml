@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Убрал меню и добавил нормальный вид странице">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил страницу выхода из аккаунта">
+      <change afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/change_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -161,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717088139670</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавил страницу выхода из аккаунта">
+      <option name="closed" value="true" />
+      <created>1717183817499</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717183817499</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +191,7 @@
     <MESSAGE value="Добавлена регистрация на сайте с использованием форм" />
     <MESSAGE value="Сделал более красивую регистрацию" />
     <MESSAGE value="Убрал меню и добавил нормальный вид странице" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал меню и добавил нормальный вид странице" />
+    <MESSAGE value="Добавил страницу выхода из аккаунта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницу выхода из аккаунта" />
   </component>
 </project>

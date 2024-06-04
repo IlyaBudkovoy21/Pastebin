@@ -4,6 +4,10 @@
 Enter to the personal account
 {% endblock header %}
 
+{% block button_header %}
+
+{% endblock %}
+
 {% block content %}
 <form method="post" action="{% url 'users:login' %}">
     {% csrf_token %}

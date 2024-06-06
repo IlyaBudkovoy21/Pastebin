@@ -139,4 +139,6 @@ SESSION_FILE_DIR = 'D:\Pastebin\sessions'
 # AUTH
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
+    'users.authenticate.EmailBackend',
+
 ]

@@ -7,30 +7,26 @@ from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView, LogoutView
 
 
-class MyLoginView(LoginView):
-    form_class = UserLoginForm
-    template_name = 'users/registration/login.html'
-    success_url = reverse_lazy('users:login')
-    def dispath(self, request):
-        if request.method == 'POST':
-            form = self.get_form(request.POST)
-            if form.is_valid():
-                self.handle_login(form)
+def login_view(request):
+    if request.method == 'POST':
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            user = authenticate(username=email, password=password)
+            if user is not None:
+                login(request, user)
+                print(request.user)
+                return redirect('users:personal_account')
             else:
-                print('хуйня форма')
-        return super().dispatch(request)
-
-    def handle_login(self, form):
-        user = form.get_user()
-        if user is not None:
-            if user.is_active:
-                return redirect(reverse('users:personal_account'))
-            else:
-                messages.error(self.request, 'Your account has not been confirmed by mail')
-                return redirect(reverse('users:login'))
+                messages.error(request, 'This user has not been found')
+                return redirect('users:login')
         else:
-            messages.error(self.request, 'There is no such account. Try to register.')
-            return redirect(reverse('users:login'))
+            messages.error(request, 'Incorrect email or password')
+            return redirect('users:login')
+    else:
+        form = UserLoginForm()
+        return render(request, 'users/registration/login.html', {'form': form})
 
 
 def registration_success(request):
@@ -53,7 +49,8 @@ class RegistrationView(FormView):
 def personal_account(request):
     if request.user.is_authenticated:
         return render(request, 'users/PersonalAccount/PersonalAccountIn.html')
-    return render(request, 'users/PersonalAccount/PersonalAccount.html', {'user': request.user})
+    else:
+        return render(request, 'users/PersonalAccount/PersonalAccount.html')
 
 
 def logout_user(request):

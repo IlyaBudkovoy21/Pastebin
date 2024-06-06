@@ -2,46 +2,52 @@ from django.shortcuts import render, redirect, reverse
 from .forms import UserLoginForm, UserRegistrationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.views.generic.edit import FormView
+from django.urls import reverse_lazy
+from django.contrib.auth.views import LoginView, LogoutView
 
 
-def login_user(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
+class MyLoginView(LoginView):
+    form_class = UserLoginForm
+    template_name = 'users/registration/login.html'
+    success_url = reverse_lazy('users:login')
+    def dispath(self, request):
+        if request.method == 'POST':
+            form = self.get_form(request.POST)
+            if form.is_valid():
+                self.handle_login(form)
+            else:
+                print('хуйня форма')
+        return super().dispatch(request)
+
+    def handle_login(self, form):
+        user = form.get_user()
         if user is not None:
-            login(request, user)
-            return redirect(reverse('users:personal_account'))
+            if user.is_active:
+                return redirect(reverse('users:personal_account'))
+            else:
+                messages.error(self.request, 'Your account has not been confirmed by mail')
+                return redirect(reverse('users:login'))
         else:
-            messages.error(request, 'Username or Password is incorrect')
-            form = UserLoginForm()
-            form.username = request.POST['username']
-            return render(request, "users/registration/login.html", {'form': form})
-    form = UserLoginForm()
-    return render(request, "users/registration/login.html", {'form': form})
+            messages.error(self.request, 'There is no such account. Try to register.')
+            return redirect(reverse('users:login'))
 
 
 def registration_success(request):
     return render(request, 'users/registration/registration_success.html')
 
 
-def registration(request):
-    if request.method == "POST":
-        form = UserRegistrationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password1']
-            user = authenticate(username=email, password=password)
-            login(request, user)
-            messages.success(request, 'Registration successful')
-            user.email_user('Confirmation of registration',
-                            'Please confirm your email address for registration on Pastebin. If you have not registered, please ignore this message.')
-            return redirect(reverse('users:registration_success'))
-        else:
-            return render(request, 'users/registration/registration.html', {'form': form})
-    form = UserRegistrationForm()
-    return render(request, 'users/registration/registration.html', {'form': form})
+class RegistrationView(FormView):
+    template_name = "users/registration/registration.html"
+    form_class = UserRegistrationForm
+    success_url = reverse_lazy('users:registration_success')
+
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.send_email()
+        form.save()
+        return super().form_valid(form)
 
 
 def personal_account(request):

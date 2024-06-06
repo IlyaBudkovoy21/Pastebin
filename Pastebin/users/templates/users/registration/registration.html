@@ -3,7 +3,6 @@
 <p>Страница регистрации</p>
 {% endblock %}
 {% block content %}
-
 <br>
 <form action="{% url 'users:registration' %}" method="post">
     {% csrf_token %}
@@ -25,3 +24,12 @@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endblock content %}
+
+{% block button_header %}
+<div class="col-6 text-end">
+    <a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
+</div>
+<div class="col-6 text-start">
+    <a class="btn btn-outline-light" type="button" href="{% url 'users:login' %}">Log in</a>
+</div>
+{% endblock %}

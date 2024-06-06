@@ -12,6 +12,10 @@
 {% endblock content %}
 
 {% block button_header %}
-<a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
-<a href="{% url 'users:logout' %}" class="btn btn-outline-light">Log out</a>
+<div class="col-6 text-end">
+    <a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
+</div>
+<div class="col-6 text-start">
+    <a href="{% url 'users:logout' %}" class="btn btn-outline-light">Log out</a>
+</div>
 {% endblock button_header %}

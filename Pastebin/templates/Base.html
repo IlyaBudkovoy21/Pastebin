@@ -16,17 +16,19 @@
             <div class="col-2 text-end">
                 <img src="{% static 'images/img.png'%}" width="100" height="100">
             </div>
-            <div class="col-6 text-start">
+            <div class="col-3 text-start">
             <h1>Pastebin</h1>
             <h6>
             {% block header %}
             {% endblock %}
             </h6>
             </div>
-            <div class="col-2 text">
+            <div class="col-5 text">
                 <br>
-                {% block button_header %}
-                {% endblock button_header %}
+                <div class="row text-end">
+                    {% block button_header %}
+                    {% endblock button_header %}
+                </div>
             </div>
 
     </div>

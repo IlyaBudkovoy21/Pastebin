@@ -7,8 +7,12 @@
 
 {% block button_header %}
     {% if user.is_authenticated %}
-        <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Account</a>
+        <div class="col-10 text-end">
+            <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Account</a>
+        </div>
     {% else %}
-        <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Log in</a>
+        <div class="col-10 text-end">
+            <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Log in</a>
+        </div>
     {% endif %}
 {% endblock button_header %}

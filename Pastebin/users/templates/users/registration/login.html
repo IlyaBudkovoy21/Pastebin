@@ -5,7 +5,12 @@ Enter to the personal account
 {% endblock header %}
 
 {% block button_header %}
-
+<div class="col-6 text-end">
+    <a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
+</div>
+<div class="col-6 text-start">
+    <a class="btn btn-outline-light" href="{% url 'users:registration'%}">Register</a>
+</div>
 {% endblock %}
 
 {% block content %}

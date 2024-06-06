@@ -135,3 +135,8 @@ AUTH_USER_MODEL = 'users.User'
 
 SESSION_ENGINE = "django.contrib.sessions.backends.file"
 SESSION_FILE_DIR = 'D:\Pastebin\sessions'
+
+# AUTH
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]

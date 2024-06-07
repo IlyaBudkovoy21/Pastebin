@@ -6,8 +6,6 @@ from .models import User
 class UserLoginForm(forms.ModelForm):
     email = forms.CharField(required=True, widget=forms.EmailInput(attrs={'class': 'form-control'}))
     password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}))
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
 
     class Meta:
         model = User

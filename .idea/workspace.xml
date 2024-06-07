@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил регистрацию в CBV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/authenticate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/authenticate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="9f9f429ca437b9bed1ba353722a449c27eac59d4" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +59,7 @@
     "Python.models.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "9f9f429c",
+    "git-widget-placeholder": "email__login__feature",
     "last_opened_file_path": "/Users/ilya_budkovoy/Projects/Pastebin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -213,11 +207,38 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="email_login_feature" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="email_login_feature" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -1,4 +1,4 @@
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from .models import User
 
@@ -18,11 +18,10 @@ class UserRegistrationForm(UserCreationForm):
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control'}), label='Email')
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), label='Password')
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), label='Confirm password')
-    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), label='Username')
 
     class Meta(UserCreationForm.Meta):
         model = User
-        fields = ('email', 'username', 'password1', 'password2')
+        fields = ('email', 'password1', 'password2')
 
     def send_email(self):
         pass

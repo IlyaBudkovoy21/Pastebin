@@ -15,10 +15,9 @@ def login_view(request):
             email = form.cleaned_data['email']
             username = User.objects.get(email=email.lower()).username
             password = form.cleaned_data['password']
-            user = authenticate(username=username, password=password)
+            user = authenticate(username=username, password=password, backend='users.authenticate.EmailBackend')
             if user is not None:
-                login(request, user)
-                print(request.user)
+                login(request, user, backend='users.authenticate.EmailBackend')
                 return redirect('users:personal_account')
             else:
                 messages.error(request, 'This user has not been found')
@@ -35,19 +34,22 @@ def registration_success(request):
     return render(request, 'users/registration/registration_success.html')
 
 
-class RegistrationView(FormView):
-    template_name = "users/registration/registration.html"
-    form_class = UserRegistrationForm
-    success_url = reverse_lazy('users:registration_success')
-
-    def form_valid(self, form):
-        # This method is called when valid form data has been POSTed.
-        # It should return an HttpResponse.
-        form.send_email()
-        form.save()
-        login(self.request, self.request.user)
-        return super().form_valid(form)
-
+def registration(request):
+    if request.method == "POST":
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            email = form.cleaned_data['email']
+            username = User.objects.get(email=email.lower()).username
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password, backend='users.authenticate.EmailBackend')
+            login(request, user, backend='users.authenticate.EmailBackend')
+            messages.success(request, 'Registration successful')
+            return redirect(reverse('users:personal_account'))
+        else:
+            return render(request, 'users/registration/registration.html', {'form': form})
+    form = UserRegistrationForm()
+    return render(request, 'users/registration/registration.html', {'form': form})
 
 def personal_account(request):
     if request.user.is_authenticated:

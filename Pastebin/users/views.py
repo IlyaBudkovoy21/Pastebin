@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.views.generic.edit import FormView
 from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView, LogoutView
+from .models import User
 
 
 def login_view(request):
@@ -12,8 +13,9 @@ def login_view(request):
         form = UserLoginForm(request.POST)
         if form.is_valid():
             email = form.cleaned_data['email']
+            username = User.objects.get(email=email.lower()).username
             password = form.cleaned_data['password']
-            user = authenticate(username=email, password=password)
+            user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
                 print(request.user)
@@ -43,6 +45,7 @@ class RegistrationView(FormView):
         # It should return an HttpResponse.
         form.send_email()
         form.save()
+        login(self.request, self.request.user)
         return super().form_valid(form)
 
 

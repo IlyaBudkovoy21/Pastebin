@@ -22,7 +22,7 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
         model = User
-        fields = ("email",)
+        fields = ('email', 'username', 'password1', 'password2')
 
     def send_email(self):
         pass

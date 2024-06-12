@@ -23,3 +23,8 @@ class UserRegistrationForm(UserCreationForm):
 
     def send_email(self):
         pass
+
+
+class UserChangeDetailsForm(forms.ModelForm):
+    first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+    last_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))

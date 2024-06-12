@@ -1,15 +1,20 @@
 {% extends 'Base.html' %}
+
+
 {% block header %}
 <p>Account</p>
 {% endblock header %}
 
+
 {% block content %}
-
+{% if user.username is None %}
+<h3>Welcome!</h3>
+{% else %}
 <h3>Welcome, {{ user.username }}!</h3>
+{% endif %}
 <h4>You have successfully logged into your account</h4>
-
-
 {% endblock content %}
+
 
 {% block button_header %}
 <div class="col-6 text-end">

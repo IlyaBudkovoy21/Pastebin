@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Решение почти готово, осталось разобраться с AnonUser">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Готовая регистрация и вход пользователя">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/change_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/changeDetails.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
     "Python.models.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "email__login__feature",
+    "git-widget-placeholder": "editProfileDetails",
     "last_opened_file_path": "/Users/ilya_budkovoy/Projects/Pastebin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,6 +130,7 @@
       <workItem from="1717488778535" duration="12612000" />
       <workItem from="1717593622714" duration="10948000" />
       <workItem from="1717687023250" duration="8499000" />
+      <workItem from="1718201933928" duration="1879000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил модели и реализовал admin-сайт">
       <option name="closed" value="true" />

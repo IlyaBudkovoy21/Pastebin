@@ -53,3 +53,7 @@ def personal_account(request):
 def logout_user(request):
     logout(request)
     return render(request, 'users/registration/logout.html')
+
+
+def edit_profile(request):
+    ...

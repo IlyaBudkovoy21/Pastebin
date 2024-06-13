@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Готовая регистрация и вход пользователя">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Создаю форму для добавления доп информации о пользователе.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/change_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/changeDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +56,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.registration.html.executor": "Debug",
-    "Python.models.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "editProfileDetails",
-    "last_opened_file_path": "/Users/ilya_budkovoy/Projects/Pastebin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.registration.html.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;editProfileDetails&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ilya_budkovoy/Projects/Pastebin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Pastebin/users/templates/users" />
@@ -130,7 +131,8 @@
       <workItem from="1717488778535" duration="12612000" />
       <workItem from="1717593622714" duration="10948000" />
       <workItem from="1717687023250" duration="8499000" />
-      <workItem from="1718201933928" duration="1879000" />
+      <workItem from="1718201933928" duration="5030000" />
+      <workItem from="1718277248808" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил модели и реализовал admin-сайт">
       <option name="closed" value="true" />
@@ -228,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717770885161</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Создаю форму для добавления доп информации о пользователе.">
+      <option name="closed" value="true" />
+      <created>1718204026517</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718204026517</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +294,7 @@
     <MESSAGE value="Стартовый коммит ветки" />
     <MESSAGE value="Наконец-таки сделал вход через email" />
     <MESSAGE value="Решение почти готово, осталось разобраться с AnonUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Решение почти готово, осталось разобраться с AnonUser" />
+    <MESSAGE value="Создаю форму для добавления доп информации о пользователе." />
+    <option name="LAST_COMMIT_MESSAGE" value="Создаю форму для добавления доп информации о пользователе." />
   </component>
 </project>

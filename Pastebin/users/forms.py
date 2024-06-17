@@ -25,6 +25,9 @@ class UserRegistrationForm(UserCreationForm):
         pass
 
 
-class UserChangeDetailsForm(forms.ModelForm):
-    first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
-    last_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+class UserChangeDetailsForm(forms.Form):
+    email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form-control'}), required=False, initial=None)
+    first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), required=False, initial=None)
+    last_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), required=False, initial=None)
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), required=False, initial=None)
+

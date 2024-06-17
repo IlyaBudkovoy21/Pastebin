@@ -1,10 +1,13 @@
 {% extends 'Base.html' %}
+
+
 {% block header %}
-<p>Страница регистрации</p>
-{% endblock %}
+<p>Edit account</p>
+{% endblock header %}
+
+
 {% block content %}
-<br>
-<form action="{% url 'users:registration' %}" method="post">
+<form method="POST" action="{% url 'users:edit_profile' %}">
     {% csrf_token %}
     {% for i in form %}
     <div class="form-group row">
@@ -20,11 +23,12 @@
 </form>
 {% endblock content %}
 
+
 {% block button_header %}
 <div class="col-6 text-end">
     <a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
 </div>
 <div class="col-6 text-start">
-    <a class="btn btn-outline-light" type="button" href="{% url 'users:login' %}">Log in</a>
+    <a class="btn btn-outline-light" type="button" href="{% url 'users:personal_account' %}">Account</a>
 </div>
-{% endblock %}
+{% endblock button_header %}

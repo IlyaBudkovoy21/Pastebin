@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Создаю форму для добавления доп информации о пользователе.">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил container-fluid для основного контента на всю страницу">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/changeDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/editProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,24 +59,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.registration.html.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;editProfileDetails&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ilya_budkovoy/Projects/Pastebin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.registration.html.executor": "Debug",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "editProfileDetails",
+    "last_opened_file_path": "/Users/ilya_budkovoy/Projects/Pastebin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Pastebin/users/templates/users" />
@@ -103,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
         <item itemvalue="JavaScript Debug.registration.html" />
+        <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
         <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
         <item itemvalue="JavaScript Debug.registration.html" />
         <item itemvalue="JavaScript Debug.registration.html" />
@@ -132,7 +135,9 @@
       <workItem from="1717593622714" duration="10948000" />
       <workItem from="1717687023250" duration="8499000" />
       <workItem from="1718201933928" duration="5030000" />
-      <workItem from="1718277248808" duration="1470000" />
+      <workItem from="1718277248808" duration="2632000" />
+      <workItem from="1718611318365" duration="1314000" />
+      <workItem from="1718612654864" duration="9730000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил модели и реализовал admin-сайт">
       <option name="closed" value="true" />
@@ -238,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718204026517</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Добавил container-fluid для основного контента на всю страницу">
+      <option name="closed" value="true" />
+      <created>1718279742950</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718279742950</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +308,7 @@
     <MESSAGE value="Наконец-таки сделал вход через email" />
     <MESSAGE value="Решение почти готово, осталось разобраться с AnonUser" />
     <MESSAGE value="Создаю форму для добавления доп информации о пользователе." />
-    <option name="LAST_COMMIT_MESSAGE" value="Создаю форму для добавления доп информации о пользователе." />
+    <MESSAGE value="Добавил container-fluid для основного контента на всю страницу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил container-fluid для основного контента на всю страницу" />
   </component>
 </project>

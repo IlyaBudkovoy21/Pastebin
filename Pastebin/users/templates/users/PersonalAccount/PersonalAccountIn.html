@@ -7,22 +7,23 @@
 
 
 {% block content %}
-{% if user.username is None %}
+{% if user.first_name is None %}
 <h3>Welcome!</h3>
 {% else %}
-<h3>Welcome, {{ user.username }}!</h3>
+<h3>Welcome, {{ user.first_name }}!</h3>
 {% endif %}
 <h4>You have successfully logged into your account</h4>
-<br><br><br>
-<p>You can change your personal data using <a href="users/PersonalAccount/changeDetails.html">this link
 {% endblock content %}
 
 
 {% block button_header %}
-<div class="col-6 text-end">
+<div class="col-4 text-end">
     <a href="{% url 'main_page:Home' %}" class="btn btn-outline-light">Main page</a>
 </div>
-<div class="col-6 text-start">
+<div class="col-2 text-center">
     <a href="{% url 'users:logout' %}" class="btn btn-outline-light">Log out</a>
+</div>
+<div class="col-4 text-start">
+    <a href="{% url 'users:edit_profile' %}" class="btn btn-outline-light">Edit</a>
 </div>
 {% endblock button_header %}

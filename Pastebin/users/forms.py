@@ -16,6 +16,8 @@ class UserRegistrationForm(UserCreationForm):
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control'}), label='Email')
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), label='Password')
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), label='Confirm password')
+    first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), initial=None, required=False)
+    last_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), initial=None, required=False)
 
     class Meta(UserCreationForm.Meta):
         model = User
@@ -29,5 +31,5 @@ class UserChangeDetailsForm(forms.Form):
     email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form-control'}), required=False, initial=None)
     first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), required=False, initial=None)
     last_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), required=False, initial=None)
-    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), required=False, initial=None)
-
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), required=False,
+                               initial=None)

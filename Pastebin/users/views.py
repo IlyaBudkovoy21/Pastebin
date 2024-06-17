@@ -27,7 +27,6 @@ def registration(request):
         if form.is_valid():
             form.save()
             email = form.cleaned_data['email']
-            username = User.objects.get(email=email.lower()).username
             password = form.cleaned_data['password1']
             user = authenticate(email=email, password=password, backend='users.authenticate.EmailBackend')
             login(request, user, backend='users.authenticate.EmailBackend')

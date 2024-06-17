@@ -63,6 +63,30 @@
                         </div>
                     </div>
                 {% endif %}
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                        <div>
+                            {{ message }}
+                        </div>
+                    </div>
+                {% endif %}
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                        <div>
+                            {{ message }}
+                        </div>
+                    </div>
+                {% endif %}
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                    <div class="alert alert-success d-flex align-items-center" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                        <div>
+                            {{ message }}
+                        </div>
+                    </div>
+                {% endif %}
             {% endfor %}
         {% endif %}
         {% block content %}

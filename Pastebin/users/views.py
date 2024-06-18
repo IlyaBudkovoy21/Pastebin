@@ -53,7 +53,6 @@ def logout_user(request):
 def edit_profile(request):
     if request.method == "POST":
         form = UserChangeDetailsForm(request.POST)
-        print(form)
         if form.is_valid():
             user = User.objects.get(email=request.user.email)
             if form.cleaned_data['first_name']:
@@ -69,7 +68,6 @@ def edit_profile(request):
             user.save()
             return redirect('users:personal_account')
         else:
-            print('не валидна')
             return render(request, 'users/PersonalAccount/editProfile.html', context={'form': form})
     else:
         form = UserChangeDetailsForm()

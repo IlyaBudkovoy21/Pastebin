@@ -1,3 +1,4 @@
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect, reverse
 from .forms import UserLoginForm, UserRegistrationForm, UserChangeDetailsForm
 from django.contrib.auth import authenticate, login, logout
@@ -31,6 +32,7 @@ def registration(request):
             user = authenticate(email=email, password=password, backend='users.authenticate.EmailBackend')
             login(request, user, backend='users.authenticate.EmailBackend')
             messages.success(request, 'Registration successful')
+            send_mail('Subject', 'Main message', 'Django-pastebin@yandex.ru', (email,), fail_silently=False)
             return redirect(reverse('users:personal_account'))
         else:
             return render(request, 'users/registration/registration.html', {'form': form})

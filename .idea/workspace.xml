@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Коммит до добавления фичи отправки email верификации">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Почти доделал отправку подтверждения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +134,8 @@
       <workItem from="1718611318365" duration="1314000" />
       <workItem from="1718612654864" duration="12635000" />
       <workItem from="1718701350850" duration="4571000" />
-      <workItem from="1718809634026" duration="6688000" />
+      <workItem from="1718809634026" duration="6801000" />
+      <workItem from="1718895369255" duration="3789000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил модели и реализовал admin-сайт">
       <option name="closed" value="true" />
@@ -273,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718702412520</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Почти доделал отправку подтверждения">
+      <option name="closed" value="true" />
+      <created>1718820343701</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718820343701</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +342,7 @@
     <MESSAGE value="Добавлена возможность редактирования всех пользовательских данных, кроме пароля" />
     <MESSAGE value="Добавил всевозможные случаи вызова messages" />
     <MESSAGE value="Коммит до добавления фичи отправки email верификации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Коммит до добавления фичи отправки email верификации" />
+    <MESSAGE value="Почти доделал отправку подтверждения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Почти доделал отправку подтверждения" />
   </component>
 </project>

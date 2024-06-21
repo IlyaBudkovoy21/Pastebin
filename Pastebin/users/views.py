@@ -31,7 +31,7 @@ def registration(request):
             password = form.cleaned_data['password1']
             user = authenticate(email=email, password=password, backend='users.authenticate.EmailBackend')
             login(request, user, backend='users.authenticate.EmailBackend')
-            messages.success(request, 'Registration successful')
+            messages.success(request, 'Successful registration')
             text_message = "Для подтверждения почты необходимо перейти по ссылке ниже."
             send_mail('Subject', text_message, 'Django-pastebin@yandex.ru', (email,), fail_silently=False)
             return redirect(reverse('users:personal_account'))

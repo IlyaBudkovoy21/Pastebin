@@ -33,3 +33,7 @@ class UserChangeDetailsForm(forms.Form):
     last_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), required=False, initial=None)
     password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}), required=False,
                                initial=None)
+
+
+class UserResetPasswordForm(forms.Form):
+    email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form-control'}))

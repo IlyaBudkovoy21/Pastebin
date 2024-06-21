@@ -26,7 +26,14 @@ Enter to the personal account
     </div>
     <br>
     {% endfor %}
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">
+        <div class="col-6 text-end">
+            <a href="{% url 'users:reset_password' %}" class="btn btn-outline-light">Forgot password?</a>
+        </div>
+        <div class="col-6 text-start">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
 </form>
 {% endblock content %}
 

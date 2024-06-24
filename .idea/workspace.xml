@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Почти доделал отправку подтверждения">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавлена отправка сообщений на почту при регистрации">
+      <change beforePath="$PROJECT_DIR$/.idea/Pastebin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pastebin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/PersonalAccount/PersonalAccountIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +71,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -79,13 +82,12 @@
       <recent name="D:\Pastebin\Pastebin\Pastebin\static" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.registration.html">
+  <component name="RunManager" selected="Python tests.Python tests for test_debugger.Test.test_first_func">
     <configuration name="registration.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Pastebin2/Pastebin/users/templates/users/registration/registration.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_debugger.Test.test_first_func" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Pastebin" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -101,11 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.registration.html" />
         <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
         <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
-        <item itemvalue="JavaScript Debug.registration.html" />
-        <item itemvalue="JavaScript Debug.registration.html" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +134,8 @@
       <workItem from="1718612654864" duration="12635000" />
       <workItem from="1718701350850" duration="4571000" />
       <workItem from="1718809634026" duration="6801000" />
-      <workItem from="1718895369255" duration="3789000" />
+      <workItem from="1718895369255" duration="5289000" />
+      <workItem from="1718958734915" duration="1298000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил модели и реализовал admin-сайт">
       <option name="closed" value="true" />
@@ -281,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718820343701</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Добавлена отправка сообщений на почту при регистрации">
+      <option name="closed" value="true" />
+      <created>1718900443579</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718900443579</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +351,7 @@
     <MESSAGE value="Добавил всевозможные случаи вызова messages" />
     <MESSAGE value="Коммит до добавления фичи отправки email верификации" />
     <MESSAGE value="Почти доделал отправку подтверждения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Почти доделал отправку подтверждения" />
+    <MESSAGE value="Добавлена отправка сообщений на почту при регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена отправка сообщений на почту при регистрации" />
   </component>
 </project>

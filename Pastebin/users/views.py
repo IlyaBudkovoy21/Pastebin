@@ -62,7 +62,7 @@ def edit_profile(request):
                 user.first_name = form.cleaned_data['first_name']
             if form.cleaned_data['last_name']:
                 user.last_name = form.cleaned_data['last_name']
-            if form.cleaned_data['email'] is not None:
+            if form.cleaned_data['email']:
                 if user.is_verified:
                     user.email = form.cleaned_data['email']
                 else:

@@ -35,5 +35,6 @@ class UserChangeDetailsForm(forms.Form):
                                initial=None)
 
 
-class UserResetPasswordForm(forms.Form):
+class PasswordResetForm(forms.Form):
     email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form-control'}))
+

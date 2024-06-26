@@ -1,6 +1,9 @@
 from django.core.mail import send_mail
-from django.shortcuts import render, redirect, reverse
-from .forms import UserLoginForm, UserRegistrationForm, UserChangeDetailsForm, UserResetPasswordForm
+from django.shortcuts import render, redirect
+from django.urls import reverse_lazy
+
+from .forms import UserLoginForm, UserRegistrationForm, UserChangeDetailsForm, PasswordResetForm
+from django.contrib.auth.views import PasswordResetView, PasswordResetDoneView
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import User
@@ -75,26 +78,13 @@ def edit_profile(request):
     else:
         form = UserChangeDetailsForm()
         context = {'form': form}
-        return render(request, 'users/PersonalAccount/editProfile.html', context=context)
 
 
-def reset_password(request):
-    if request.method == "POST":
-        form = UserResetPasswordForm(request.POST)
-        email = request.POST['email']
-        user = User.objects.get(email=email)
-        if user:
-            send_mail('Password Recovery', 'To recover your password, follow the link below',
-                      'Django-pastebin@yandex.ru', [email], fail_silently=False)
-            messages.add_message(request, messages.INFO, 'The link for password recovery has been sent to the mail')
-            return redirect('users:password_reset_done')
-        else:
-            messages.add_message(request, messages.ERROR, 'The user with this email was not found')
-            return render(request, 'users/registration/password_reset_form.html', context={'form': form})
-    else:
-        form = UserResetPasswordForm()
-        return render(request, 'users/registration/password_reset_form.html', context={'form': form})
+class PasswordReset(PasswordResetView):
+    template_name = 'users/registration/password_reset_form.html'
+    form_class = PasswordResetForm
+    success_url = reverse_lazy('users:password_reset_done')
 
 
-def password_reset_done(request):
-    return render(request, 'users/registration/password_reset_done.html')
+class PasswordResetDone(PasswordResetDoneView):
+    template_name = 'users/registration/password_reset_done.html'

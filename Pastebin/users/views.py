@@ -19,7 +19,7 @@ def login_view(request):
             login(request, user, backend='users.authenticate.EmailBackend')
             return redirect('users:personal_account')
         else:
-            messages.error(request, 'This user has not been found')
+            messages.error(request, 'Incorrect email or password')
             return redirect('users:login')
     else:
         form = UserLoginForm()

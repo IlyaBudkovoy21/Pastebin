@@ -44,12 +44,11 @@ class UserPasswordResetForm(PasswordResetForm):
 class SetNewPassword(SetPasswordForm):
     new_password1 = forms.CharField(
         label="New password",
-        widget=forms.PasswordInput(attrs={"autocomplete": "new-password", 'class': 'form-control'}),
+        widget=forms.PasswordInput(attrs={'class': 'form-control'}),
         strip=False,
-        help_text=password_validation.password_validators_help_text_html(),
     )
     new_password2 = forms.CharField(
         label="New password confirmation",
         strip=False,
-        widget=forms.PasswordInput(attrs={"autocomplete": "new-password", 'class': 'form-control'}),
+        widget=forms.PasswordInput(attrs={'class': 'form-control'}),
     )

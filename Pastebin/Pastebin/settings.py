@@ -140,7 +140,7 @@ EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_HOST_USER = 'Django-pastebin@yandex.ru'
-EMAIL_HOST_PASSWORD = 'gcjitkppqgttmrqy'
+EMAIL_HOST_PASSWORD = os.getenv('gcjitkppqgttmrqy')
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER

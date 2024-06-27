@@ -1,9 +1,10 @@
 from django.core.mail import send_mail
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.urls import reverse_lazy
 
-from .forms import UserLoginForm, UserRegistrationForm, UserChangeDetailsForm, PasswordResetForm
-from django.contrib.auth.views import PasswordResetView, PasswordResetDoneView
+from .forms import UserLoginForm, UserRegistrationForm, UserChangeDetailsForm, UserPasswordResetForm, SetNewPassword
+from django.contrib.auth.views import PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, \
+    PasswordResetCompleteView
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import User
@@ -82,9 +83,21 @@ def edit_profile(request):
 
 class PasswordReset(PasswordResetView):
     template_name = 'users/registration/password_reset_form.html'
-    form_class = PasswordResetForm
+    form_class = UserPasswordResetForm
     success_url = reverse_lazy('users:password_reset_done')
+    email_template_name = 'users/registration/password_reset_email.html'
 
 
 class PasswordResetDone(PasswordResetDoneView):
     template_name = 'users/registration/password_reset_done.html'
+
+
+class PasswordResetConfirm(PasswordResetConfirmView):
+    form_class = SetNewPassword
+    success_url = reverse_lazy('users:password_reset_complete')
+    template_name = 'users/registration/password_reset_confirm.html'
+
+
+class PasswordResetComplete(PasswordResetCompleteView):
+    template_name = 'users/registration/password_reset_complete.html'
+

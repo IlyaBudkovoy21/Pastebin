@@ -1,4 +1,5 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import password_validation
+from django.contrib.auth.forms import UserCreationForm, PasswordResetForm, SetPasswordForm
 from django import forms
 from .models import User
 
@@ -23,9 +24,6 @@ class UserRegistrationForm(UserCreationForm):
         model = User
         fields = ('email', 'password1', 'password2', 'first_name', 'last_name')
 
-    def send_email(self):
-        pass
-
 
 class UserChangeDetailsForm(forms.Form):
     email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form-control'}), required=False, initial=None)
@@ -35,6 +33,23 @@ class UserChangeDetailsForm(forms.Form):
                                initial=None)
 
 
-class PasswordResetForm(forms.Form):
-    email = forms.CharField(widget=forms.EmailInput(attrs={'class': 'form-control'}))
+class UserPasswordResetForm(PasswordResetForm):
+    email = forms.EmailField(
+        label="Email",
+        max_length=254,
+        widget=forms.EmailInput(attrs={"autocomplete": "email", 'class': 'form-control'}),
+    )
 
+
+class SetNewPassword(SetPasswordForm):
+    new_password1 = forms.CharField(
+        label="New password",
+        widget=forms.PasswordInput(attrs={"autocomplete": "new-password", 'class': 'form-control'}),
+        strip=False,
+        help_text=password_validation.password_validators_help_text_html(),
+    )
+    new_password2 = forms.CharField(
+        label="New password confirmation",
+        strip=False,
+        widget=forms.PasswordInput(attrs={"autocomplete": "new-password", 'class': 'form-control'}),
+    )

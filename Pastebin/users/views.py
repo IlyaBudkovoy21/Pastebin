@@ -66,7 +66,7 @@ def edit_profile(request):
                 user.first_name = form.cleaned_data['first_name']
             if form.cleaned_data['last_name']:
                 user.last_name = form.cleaned_data['last_name']
-            if form.cleaned_data['email'] is not None:
+            if form.cleaned_data['email']:
                 if user.is_verified:
                     user.email = form.cleaned_data['email']
                 else:
@@ -79,6 +79,7 @@ def edit_profile(request):
     else:
         form = UserChangeDetailsForm()
         context = {'form': form}
+        return render(request, 'users/PersonalAccount/editProfile.html', context={'form': form})
 
 
 class PasswordReset(PasswordResetView):
@@ -100,4 +101,3 @@ class PasswordResetConfirm(PasswordResetConfirmView):
 
 class PasswordResetComplete(PasswordResetCompleteView):
     template_name = 'users/registration/password_reset_complete.html'
-

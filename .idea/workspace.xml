@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Исправил некоторые баги">
-      <change beforePath="$PROJECT_DIR$/.idea/Pastebin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pastebin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил поле ввода текста">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/static/images/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/static/images/img_3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -464,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720270336984</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Добавил поле ввода текста">
+      <option name="closed" value="true" />
+      <created>1721811421380</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1721811421380</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,6 +549,7 @@
     <MESSAGE value="Спрятал api-ключи" />
     <MESSAGE value="Спрятал api-ключи, теперь точно" />
     <MESSAGE value="Исправил некоторые баги" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил некоторые баги" />
+    <MESSAGE value="Добавил поле ввода текста" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил поле ввода текста" />
   </component>
 </project>

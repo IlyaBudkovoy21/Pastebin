@@ -6,7 +6,24 @@
 {% endblock %}
 
 
+{% block stl %}
+.fixed-textarea {
+            width: 600px;
+            height: 200px;
+        }
+.mt-14 {
+        margin-top: 14rem;
+    }
+
+{% endblock %}
+
+
 {% block content %}
+<div class="row my-3 mx-3">
+    <div class="col text-start"><label>New paste</label></div>
+    <div class="w-100"></div>
+    <div class="col"><textarea rows="10" class="form-control fixed-textarea" id="text_input"></textarea></div>
+</div>
 {% endblock %}
 
 

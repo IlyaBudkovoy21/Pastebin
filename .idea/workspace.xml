@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Спрятал api-ключи, теперь точно">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Исправил некоторые баги">
+      <change beforePath="$PROJECT_DIR$/.idea/Pastebin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pastebin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/users/templates/users/registration/password_reset_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp/MainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +19,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,28 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.registration.html.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;update__password&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Opensources/Mezzanine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.registration.html.executor": "Run",
+    "Python.manage (1).executor": "Run",
+    "Python.manage.executor": "Run",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "addTextField",
+    "last_opened_file_path": "D:/Projects/Opensources/Mezzanine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Pastebin/MainApp" />
       <recent name="$PROJECT_DIR$/Pastebin/users/templates/users" />
       <recent name="$PROJECT_DIR$/Pastebin/templates/PersonalAccount" />
       <recent name="D:\Pastebin\Pastebin\Pastebin\static" />
@@ -89,14 +90,12 @@
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Pastebin" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Pastebin2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -111,9 +110,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="asyncronous" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pastebin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/asyncronous.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="leetcode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pastebin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python">
       <module name="Pastebin" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -159,11 +201,10 @@
     </configuration>
     <configuration name="Python tests for test_debugger.Test.test_first_func" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Pastebin" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pastebin/templates/MainApp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -174,16 +215,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.registration.html" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python.asyncronous" />
+      <item itemvalue="Python.leetcode" />
       <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
+        <item itemvalue="Python.leetcode" />
+        <item itemvalue="Python.asyncronous" />
         <item itemvalue="Python.manage" />
-        <item itemvalue="JavaScript Debug.registration.html" />
-        <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
-        <item itemvalue="Python tests.Python tests for test_debugger.Test.test_first_func" />
       </list>
     </recent_temporary>
   </component>
@@ -414,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719499504953</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Исправил некоторые баги">
+      <option name="closed" value="true" />
+      <created>1720270336984</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1720270336984</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,6 +479,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="email_login_feature" />
@@ -449,7 +504,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="email_login_feature" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -485,10 +540,7 @@
     <MESSAGE value="Разработано восстановление пароля по почте" />
     <MESSAGE value="Спрятал api-ключи" />
     <MESSAGE value="Спрятал api-ключи, теперь точно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Спрятал api-ключи, теперь точно" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pastebin2$manage__1_.coverage" NAME="manage Coverage Results" MODIFIED="1719395817340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pastebin" />
-    <SUITE FILE_PATH="coverage/Pastebin2$manage.coverage" NAME="manage Coverage Results" MODIFIED="1719395369709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pastebin" />
+    <MESSAGE value="Исправил некоторые баги" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил некоторые баги" />
   </component>
 </project>

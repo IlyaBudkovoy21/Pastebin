@@ -1,6 +1,5 @@
-from django.shortcuts import render, redirect
-from .forms import UserData
-from django.http import HttpRequest
+from django.shortcuts import render
+import boto3
 
 
 # Create your views here.
@@ -15,3 +14,6 @@ def home(request):
     return render(request, 'MainApp/MainPage.html', context=context)
 
 
+def send_text(request):
+    # Create a resource service client by name using the default session.
+    s3 = boto3.resource('s3')

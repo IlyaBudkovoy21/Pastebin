@@ -16,21 +16,28 @@
         margin-top: 14rem;
     }
 
-{% endblock %}
+{% endblock stl %}
 
 
 {% block content %}
-<div class="row my-3 mx-3">
-    <div class="col text-start"><label>New paste</label></div>
-    <div class="w-100"></div>
-    <div class="col"><textarea rows="10" class="form-control fixed-textarea" id="text_input"></textarea></div>
-</div>
-<div class="row">
-    <div class="col-3 text-start my-3 mx-5">
-        <button type="submit" class="btn btn-primary">Create new paste</button>
+<form method="post" action="{% url 'main_page:Home' %}">
+    {% csrf_token %}
+    {% for i in form %}
+    <div class="form-group">
+        <div class="row my-3 mx-3">
+        <div class="col text-start"><label>New paste</label></div>
+            <div class="w-100"></div>
+            <div class="col">{{ i }}</div>
+        </div>
+        <div class="row">
+            <div class="col-3 text-start my-3 mx-5">
+                <button type="submit" class="btn btn-primary">Create new paste</button>
+            </div>
+        </div>
     </div>
-</div>
-{% endblock %}
+    {% endfor %}
+</form>
+{% endblock content %}
 
 
 {% block button_header %}

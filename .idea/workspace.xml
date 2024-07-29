@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил модуль aiobotocore для добавления объектного хранилища">
+    <list default="true" id="4e4d95b4-f4a3-47b3-9700-b7f57d81728e" name="Changes" comment="Добавил класс для взаимодействия с объектным хранилищем">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/s3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/Pastebin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/templates/MainApp/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pastebin/MainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pastebin/MainApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -518,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721991264442</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Добавил класс для взаимодействия с объектным хранилищем">
+      <option name="closed" value="true" />
+      <created>1722010293073</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1722010293073</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сделал более красивую регистрацию" />
     <MESSAGE value="Убрал меню и добавил нормальный вид странице" />
     <MESSAGE value="Добавил страницу выхода из аккаунта" />
     <MESSAGE value="Создал новую модель для регистрации пользователя по email" />
@@ -596,6 +606,7 @@
     <MESSAGE value="Исправил footer" />
     <MESSAGE value="Забыл добавить пнг рисунков" />
     <MESSAGE value="Добавил модуль aiobotocore для добавления объектного хранилища" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил модуль aiobotocore для добавления объектного хранилища" />
+    <MESSAGE value="Добавил класс для взаимодействия с объектным хранилищем" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил класс для взаимодействия с объектным хранилищем" />
   </component>
 </project>
